@@ -1,0 +1,30 @@
+---
+driver:
+  name: vagrant
+  network:
+  - ["forwarded_port", {guest: 8080, host: 8080}]
+
+provisioner:
+  name: chef_solo
+
+platforms:
+  - name: chef-centos-6.6
+
+suites:
+  - name: default
+    run_list:
+      - recipe[java::default]
+      - recipe[jenkinsci::default]
+    attributes:
+      jenkins-server:
+        nginx:
+          install: true
+      jenkins:
+        master:
+          listen_address: '0.0.0.0'
+          install_method: 'package'
+      java:
+        install_flavor: 'oracle'
+        jdk_version: '7'
+        oracle:
+          accept_oracle_download_terms: true
