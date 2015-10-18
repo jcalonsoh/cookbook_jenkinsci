@@ -25,6 +25,26 @@ TODO: List your supported platforms.
 
 ## Usage
 
+### Before: Install
+
+``` cmd
+vagrant plugin install vagrant-berkshelf
+vagrant plugin install vagrant-omnibus
+bundle install
+```
+
+### Vagrant
+
+``` cmd
+bundle exec vagrant up
+```
+
+### Kitchen.ci
+
+``` cmd
+bundle exec kitchen converge / test
+```
+
 ### jenkinsci::default
 
 Include `jenkinsci` in your node's `run_list`:
@@ -39,4 +59,4 @@ Include `jenkinsci` in your node's `run_list`:
 
 ## License and Authors
 
-Author:: YOUR_NAME (<YOUR_EMAIL>)
+Author:: Juan Carlos Alonso Holmstron (j.carlos.alonso.h@gmail.com)

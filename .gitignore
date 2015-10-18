@@ -13,9 +13,12 @@ Berksfile.lock
 
 # Bundler
 Gemfile.lock
-bin/*
-.bundle/*
+bin
+.bundle
 
+# IDE
 .idea
-.kitchen/
+
+# Kitchen.ci
+.kitchen
 .kitchen.local.yml
