@@ -1,6 +1,6 @@
 name             'jenkinsci'
-maintainer       'YOUR_NAME'
-maintainer_email 'YOUR_EMAIL'
+maintainer       'Juan Carlos Alonso Holmstron'
+maintainer_email 'j.carlos.alonso.h@gmail.com'
 license          'All rights reserved'
 description      'Installs/Configures jenkinsci'
 long_description 'Installs/Configures jenkinsci'
